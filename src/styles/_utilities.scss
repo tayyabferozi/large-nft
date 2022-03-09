@@ -1,0 +1,31 @@
+@import url(//db.onlinewebfonts.com/c/9186e96567fadf9c630b48d987ccd538?family=ChaloopsW00-Bd);
+
+%transition {
+  transition: 0.4s ease;
+}
+
+%stroked {
+  -webkit-text-stroke: 2px black;
+  color: #fff;
+}
+
+h1,
+h2 {
+  @extend %stroked;
+}
+
+h1 {
+  font-size: 78px;
+}
+
+h2 {
+  font-size: 58px;
+}
+
+h3 {
+  font-size: 38px;
+}
+
+.bg-green {
+  background-color: $color1;
+}

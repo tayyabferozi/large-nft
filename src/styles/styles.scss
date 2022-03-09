@@ -1,0 +1,226 @@
+@import "colors";
+@import "utilities";
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: "ChaloopsW00-Bd", sans-serif;
+  color: #000;
+}
+
+body {
+  font-size: 16px;
+}
+
+.page-container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-left: 4rem !important;
+  padding-right: 4rem !important;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 0;
+  z-index: 5;
+
+  @extend %transition;
+
+  &.scrolled {
+    background-color: #fff;
+    padding: 1rem 0;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+
+      .links,
+      .social {
+        display: flex;
+        align-items: center;
+      }
+
+      .links {
+        gap: 50px;
+
+        a {
+          font-size: 18px;
+          @extend %transition;
+
+          &:hover {
+            color: $color1;
+          }
+        }
+      }
+
+      .social {
+        gap: 20px;
+      }
+    }
+  }
+}
+
+#landing {
+  background-image: url(../assets/bg-hero.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  min-height: 866px;
+}
+
+#about {
+  position: relative;
+  background-color: $color1;
+  padding: 240px 0 400px;
+  background-image: url(../assets/about-us-board.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 20px) calc(50% - 50px);
+
+  .vector {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .page-container {
+    max-width: 1000px;
+  }
+
+  * {
+    color: #fff;
+  }
+}
+
+#rarity {
+  position: relative;
+  background: linear-gradient(to bottom, $color2, $color3);
+  padding: 430px 0 120px;
+
+  .vector {
+    position: absolute;
+    left: 0;
+    width: 100%;
+
+    &.top {
+      top: 0;
+    }
+
+    &.bottom {
+      bottom: 0;
+      transform: rotate(180deg);
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  .nft-cards {
+    .col-lg {
+      width: 20%;
+
+      .nft-card {
+        background-color: #000;
+        padding: 31px 18px 0;
+        border-radius: 10px;
+
+        * {
+          color: #fff;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .categories-container {
+    h2 {
+      margin-top: 140px;
+    }
+
+    .categorie-cards {
+      .category-card {
+        background-color: $color1;
+        border-radius: 15px;
+        height: 100%;
+
+        .main {
+          padding: 10% 1rem;
+          background: url(../assets/bg-attribue-card.png);
+          background-size: cover;
+
+          h3 {
+            font-size: 32px;
+            @extend %stroked;
+          }
+        }
+      }
+    }
+  }
+}
+
+#team {
+  position: relative;
+  padding-top: 500px;
+  text-align: center;
+  z-index: 1;
+
+  .vector {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .team-cards {
+    .team-card {
+      img {
+        width: 100%;
+        max-width: 275px;
+        margin-bottom: 0.5rem;
+      }
+      h3 {
+        @extend %stroked;
+      }
+    }
+  }
+}
+
+#foot {
+  margin-top: -3rem;
+  position: relative;
+  z-index: 1;
+
+  img.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  img.vector {
+    width: 100%;
+    display: block;
+  }
+}
