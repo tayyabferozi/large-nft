@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-scroll";
 
 function App() {
   useEffect(() => {
@@ -25,11 +26,21 @@ function App() {
             </div>
             <div className="nav">
               <div className="links">
-                <a href="#hero">Home</a>
-                <a href="#about">About</a>
-                <a href="#rarity">Rarity</a>
-                <a href="#roadmap">Roadmap</a>
-                <a href="#team">Team</a>
+                <Link offset={0} smooth={true} to="landing">
+                  Home
+                </Link>
+                <Link offset={-60} smooth={true} to="about">
+                  About
+                </Link>
+                <Link offset={50} smooth={true} to="rarity">
+                  Rarity
+                </Link>
+                <Link offset={-100} smooth={true} to="roadmap">
+                  Roadmap
+                </Link>
+                <Link offset={80} smooth={true} to="team">
+                  Team
+                </Link>
               </div>
 
               <div className="social">
