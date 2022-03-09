@@ -1,5 +1,8 @@
 import { useEffect } from "react";
 import { Link } from "react-scroll";
+import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
+import Slide from "react-reveal/Slide";
 
 function App() {
   useEffect(() => {
@@ -62,53 +65,63 @@ function App() {
         </div>
       </div>
 
-      <div id="landing" className="section landing">
-        <div className="page-container"></div>
-      </div>
+      <Fade>
+        <div id="landing" className="section landing">
+          <div className="page-container"></div>
+        </div>
+      </Fade>
 
-      <div id="about" className="section about">
-        <img
-          className="vector"
-          src="./assets/imgs/about-us-bottom.png"
-          alt="about-us"
-        />
-        <div className="page-container">
-          <div className="about-container">
-            <div className="container-fluid px-0">
-              <div className="row">
-                <div className="col-lg-7">
-                  <h2>About Us</h2>
+      <Fade>
+        <div id="about" className="section about">
+          <img
+            className="vector"
+            src="./assets/imgs/about-us-bottom.png"
+            alt="about-us"
+          />
+          <div className="page-container">
+            <div className="about-container">
+              <div className="container-fluid px-0">
+                <div className="row">
+                  <div className="col-lg-7">
+                    <Fade left>
+                      <h2>About Us</h2>
 
-                  <p>
-                    The Tentacular genesis NFT collection will be set to go live
-                    in April 2022. The Total Supply will be 5,556 Tentacular,
-                    and 2,778 Cave Land. 2,228 Tentacular will be male, and
-                    2,228 will be female. Every mint will consist of 2
-                    Tentacular and 1 Cave Land bundled into one transaction.
-                    There will not be the ability to mint less than 2
-                    Tentacular. The hand drawn genesis collection is randomly
-                    generated from over 200 different hand drawn traits,
-                    spanning across 7 different attribute categories.
-                  </p>
-                </div>
-                <div className="col-lg-5">
-                  <img
-                    className="nft w-100"
-                    src="./assets/imgs/nft-green.png"
-                    alt="nft"
-                  />
+                      <p>
+                        The Tentacular genesis NFT collection will be set to go
+                        live in April 2022. The Total Supply will be 5,556
+                        Tentacular, and 2,778 Cave Land. 2,228 Tentacular will
+                        be male, and 2,228 will be female. <br />
+                        Every mint will consist of 2 Tentacular and 1 Cave Land
+                        bundled into one transaction. There will not be the
+                        ability to mint less than 2 Tentacular. The hand drawn
+                        genesis collection is randomly generated from over 200
+                        different hand drawn traits, spanning across 7 different
+                        attribute categories.
+                      </p>
+                    </Fade>
+                  </div>
+                  <div className="col-lg-5">
+                    <Fade right>
+                      <img
+                        className="nft w-100"
+                        src="./assets/imgs/nft-green.png"
+                        alt="nft"
+                      />
+                    </Fade>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </Fade>
 
       <div id="rarity" className="section">
         <div className="page-container">
           <div className="rarity-container">
-            <h2>Rarity</h2>
-
+            <Fade bottom>
+              <h2>Rarity</h2>
+            </Fade>
             <img
               className="vector top"
               src="./assets/imgs/spikes.png"
@@ -117,109 +130,115 @@ function App() {
 
             <div className="nft-cards">
               <div className="container-fluid px-0">
-                <div className="row">
-                  <div className="col-lg">
-                    <div className="nft-card">
-                      <h3>Merchant</h3>
+                <Fade bottom cascade>
+                  <div className="row">
+                    <div className="col-lg">
+                      <div className="nft-card">
+                        <h3>Merchant</h3>
 
-                      <img src="./assets/imgs/nft-1.png" alt="nft" />
+                        <img src="./assets/imgs/nft-1.png" alt="nft" />
+                      </div>
+                    </div>
+                    <div className="col-lg">
+                      <div className="nft-card">
+                        <h3>Artisan</h3>
+
+                        <img src="./assets/imgs/nft-2.png" alt="nft" />
+                      </div>
+                    </div>
+                    <div className="col-lg">
+                      <div className="nft-card">
+                        <h3>Knight</h3>
+
+                        <img src="./assets/imgs/nft-3.png" alt="nft" />
+                      </div>
+                    </div>
+                    <div className="col-lg">
+                      <div className="nft-card">
+                        <h3>Noble</h3>
+
+                        <img src="./assets/imgs/nft-4.png" alt="nft" />
+                      </div>
+                    </div>
+                    <div className="col-lg">
+                      <div className="nft-card">
+                        <h3>Royal</h3>
+
+                        <img src="./assets/imgs/nft-5.png" alt="nft" />
+                      </div>
                     </div>
                   </div>
-                  <div className="col-lg">
-                    <div className="nft-card">
-                      <h3>Artisan</h3>
-
-                      <img src="./assets/imgs/nft-2.png" alt="nft" />
-                    </div>
-                  </div>
-                  <div className="col-lg">
-                    <div className="nft-card">
-                      <h3>Knight</h3>
-
-                      <img src="./assets/imgs/nft-3.png" alt="nft" />
-                    </div>
-                  </div>
-                  <div className="col-lg">
-                    <div className="nft-card">
-                      <h3>Noble</h3>
-
-                      <img src="./assets/imgs/nft-4.png" alt="nft" />
-                    </div>
-                  </div>
-                  <div className="col-lg">
-                    <div className="nft-card">
-                      <h3>Royal</h3>
-
-                      <img src="./assets/imgs/nft-5.png" alt="nft" />
-                    </div>
-                  </div>
-                </div>
+                </Fade>
               </div>
             </div>
           </div>
 
           <div className="categories-container">
-            <h2>Attribute Categories</h2>
+            <Fade bottom>
+              <h2>Attribute Categories</h2>
+            </Fade>
 
             <div className="categorie-cards">
               <div className="container-fluid px-0">
-                <div className="row gy-4 justify-content-center">
-                  <div className="col-lg-3">
-                    <div className="category-card">
-                      <div className="main">
-                        <h3>
-                          Background <br /> (19)
-                        </h3>
+                <Slide bottom cascade>
+                  <div className="row gy-4 justify-content-center">
+                    <div className="col-lg-3">
+                      <div className="category-card">
+                        <div className="main">
+                          <h3>
+                            Background <br /> (19)
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-3">
+                      <div className="category-card">
+                        <div className="main">
+                          <h3>Color (100)</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-3">
+                      <div className="category-card">
+                        <div className="main">
+                          <h3>Eyes (X)</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-3">
+                      <div className="category-card">
+                        <div className="main">
+                          <h3>Eye Accessory (X)</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-3">
+                      <div className="category-card">
+                        <div className="main">
+                          <h3>
+                            Head <br /> Accessory (X)
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-3">
+                      <div className="category-card">
+                        <div className="main">
+                          <h3>
+                            Body <br /> Accessory (X)
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-3">
+                      <div className="category-card">
+                        <div className="main">
+                          <h3>Base (X)</h3>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-3">
-                    <div className="category-card">
-                      <div className="main">
-                        <h3>Color (100)</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3">
-                    <div className="category-card">
-                      <div className="main">
-                        <h3>Eyes (X)</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3">
-                    <div className="category-card">
-                      <div className="main">
-                        <h3>Eye Accessory (X)</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3">
-                    <div className="category-card">
-                      <div className="main">
-                        <h3>
-                          Head <br /> Accessory (X)
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3">
-                    <div className="category-card">
-                      <div className="main">
-                        <h3>
-                          Body <br /> Accessory (X)
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3">
-                    <div className="category-card">
-                      <div className="main">
-                        <h3>Base (X)</h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                </Slide>
               </div>
             </div>
           </div>
@@ -234,36 +253,52 @@ function App() {
             alt="spikes"
           />
           <div className="page-container">
-            <h1>Team</h1>
+            <Zoom>
+              <h1>Team</h1>
+            </Zoom>
 
             <div className="team-cards">
               <div className="container-fluid px-0">
-                <div className="row">
-                  <div className="col-lg-3">
-                    <div className="team-card">
-                      <img src="./assets/imgs/team-mem-1.png" alt="team-mem" />
-                      <h3>John doe</h3>
+                <Slide bottom cascade>
+                  <div className="row">
+                    <div className="col-lg-3">
+                      <div className="team-card">
+                        <img
+                          src="./assets/imgs/team-mem-1.png"
+                          alt="team-mem"
+                        />
+                        <h3>John doe</h3>
+                      </div>
+                    </div>
+                    <div className="col-lg-3">
+                      <div className="team-card">
+                        <img
+                          src="./assets/imgs/team-mem-2.png"
+                          alt="team-mem"
+                        />
+                        <h3>John doe</h3>
+                      </div>
+                    </div>
+                    <div className="col-lg-3">
+                      <div className="team-card">
+                        <img
+                          src="./assets/imgs/team-mem-3.png"
+                          alt="team-mem"
+                        />
+                        <h3>John doe</h3>
+                      </div>
+                    </div>
+                    <div className="col-lg-3">
+                      <div className="team-card">
+                        <img
+                          src="./assets/imgs/team-mem-4.png"
+                          alt="team-mem"
+                        />
+                        <h3>John doe</h3>
+                      </div>
                     </div>
                   </div>
-                  <div className="col-lg-3">
-                    <div className="team-card">
-                      <img src="./assets/imgs/team-mem-2.png" alt="team-mem" />
-                      <h3>John doe</h3>
-                    </div>
-                  </div>
-                  <div className="col-lg-3">
-                    <div className="team-card">
-                      <img src="./assets/imgs/team-mem-3.png" alt="team-mem" />
-                      <h3>John doe</h3>
-                    </div>
-                  </div>
-                  <div className="col-lg-3">
-                    <div className="team-card">
-                      <img src="./assets/imgs/team-mem-4.png" alt="team-mem" />
-                      <h3>John doe</h3>
-                    </div>
-                  </div>
-                </div>
+                </Slide>
               </div>
             </div>
           </div>
