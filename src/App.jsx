@@ -815,29 +815,36 @@ function App() {
                   answer: "April 2022",
                 },
                 {
+                  question: "What is the mint price?",
+                  answer: "TBA",
+                },
+                {
                   question: "What blockchain will Tentacular reside on?",
-                  answer: "sdfsdf",
+                  answer: "ETH",
                 },
                 {
                   question: "How many Tentacular NFTs will there be?",
-                  answer: "sdfsdf",
+                  answer:
+                    "The Tentacular ecosystem starts with a hand-drawn genesis collection of 5,556 randomly generated Gen 0 Tentacular bundled with 2,778 Cave Land NFTs.",
                 },
                 {
                   question: "Is there a whitelist?",
-                  answer: "sdfsdf",
+                  answer:
+                    "Yes, please join our discord server to learn more about how to earn your whitelist spot.",
                 },
                 {
                   question: "Are there any opportunities to join the team?",
-                  answer: "sdfsdf",
+                  answer:
+                    "Yes, please join our discord server to apply for a position on the team.",
                 },
                 {
                   question:
                     "Will the Smart Contract be Audited? by a trusted and reputable third-party before launch to ensure fairness and security?",
-                  answer: "sdfsdf",
+                  answer: "Yes.",
                 },
                 {
                   question: "Will low gas minting be implemented?",
-                  answer: "sdfsdf",
+                  answer: "Yes.",
                 },
               ].map((el, idx) => {
                 return <FaqItem {...el} key={"faq-" + idx} />;
