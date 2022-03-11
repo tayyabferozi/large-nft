@@ -4,9 +4,11 @@ import { Link } from "react-scroll";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 import Slide from "react-reveal/Slide";
+import FaqItem from "./components/FaqItem";
 
 function App() {
   const [isSideNavActive, setIsSideNavActive] = useState(false);
+  const [roadmapRevealedState, setRoadmapRevealedState] = useState(0);
 
   useEffect(() => {
     document.addEventListener("scroll", function () {
@@ -21,6 +23,16 @@ function App() {
       }
     });
   }, []);
+
+  const showMoreRoadmap = () => {
+    setRoadmapRevealedState((prevState) => {
+      if (prevState === 2) {
+        return 2;
+      }
+
+      return (prevState += 1);
+    });
+  };
 
   const toggleSideNav = () => {
     setIsSideNavActive((prevState) => !prevState);
@@ -38,7 +50,10 @@ function App() {
         </div>
 
         <Link to="/">
-          <h2 className="logo stroked">Tentacular</h2>
+          {/* <h2 className="logo stroked">Tentacular</h2> */}
+          <div className="logo">
+            <img className="logo" src="./assets/imgs/logo.png" alt="logo" />
+          </div>
         </Link>
 
         <Link onClick={toggleSideNav} offset={0} smooth={true} to="landing">
@@ -87,7 +102,8 @@ function App() {
         <div className="page-container">
           <div className="navbar">
             <div className="logo">
-              <h2 className="logo stroked">Tentacular</h2>
+              {/* <h2 className="logo stroked">Tentacular</h2> */}
+              <img className="logo" src="./assets/imgs/logo.png" alt="logo" />
             </div>
             <div className="menu show-sm" onClick={toggleSideNav}>
               <span />
@@ -146,7 +162,6 @@ function App() {
           </div>
         </div>
       </div>
-
       <Fade>
         <div id="landing" className="section landing">
           <img
@@ -156,7 +171,6 @@ function App() {
           />
         </div>
       </Fade>
-
       <Fade>
         <div id="about" className="section about">
           <img
@@ -208,7 +222,6 @@ function App() {
           </div>
         </div>
       </Fade>
-
       <div id="rarity" className="section">
         <div className="page-container">
           <div className="rarity-container">
@@ -385,13 +398,457 @@ function App() {
         </div>
       </div>
 
+      <div className="ox-hidden">
+        <div id="roadmap-top">
+          <img className="w-100" src="./assets/imgs/spikes.png" alt="spikes" />
+          <img
+            src="./assets/vectors/roadmap-map-top.svg"
+            className="w-100"
+            alt="roadmap"
+          />
+
+          <div id="roadmap-wrap">
+            <img
+              className="w-100 gif"
+              src="./assets/imgs/jins.gif"
+              alt="jins"
+            />
+            <div className="jins">
+              <img
+                className="jin"
+                src="./assets/vectors/caves-and-stones/jin-1.svg"
+                alt="jin"
+              />
+              <img
+                className="jin"
+                src="./assets/vectors/caves-and-stones/jin-2.svg"
+                alt="jin"
+              />
+              <img
+                className="jin"
+                src="./assets/vectors/caves-and-stones/jin-3.svg"
+                alt="jin"
+              />
+              <img
+                className="jin"
+                src="./assets/vectors/caves-and-stones/jin-4.svg"
+                alt="jin"
+              />
+              <img
+                className="jin"
+                src="./assets/vectors/caves-and-stones/jin-5.svg"
+                alt="jin"
+              />
+              <img
+                className="jin"
+                src="./assets/vectors/caves-and-stones/jin-6.svg"
+                alt="jin"
+              />
+            </div>
+            <div className="roadmap-section-container">
+              <div className="section" id="roadmap">
+                <div
+                  className={clsx("page-container", {
+                    three: roadmapRevealedState === 2,
+                  })}
+                >
+                  <h1 className="text-center">Roadmap</h1>
+
+                  <div
+                    onClick={showMoreRoadmap}
+                    className={clsx(
+                      "section mt-5",
+                      {
+                        one: roadmapRevealedState === 0,
+                      },
+                      {
+                        two: roadmapRevealedState === 1,
+                      },
+                      {
+                        three: roadmapRevealedState === 2,
+                      }
+                    )}
+                    id="roadmap-sm"
+                  >
+                    <div className="item">
+                      <div className="img">
+                        <img
+                          src="./assets/vectors/caves-and-stones/cave-1.svg"
+                          alt="cave"
+                        />
+                      </div>
+                      <h3>Website Launch</h3>
+                    </div>
+                    <div className="item">
+                      <div className="img">
+                        <img
+                          src="./assets/vectors/caves-and-stones/cave-1.svg"
+                          alt="cave"
+                        />
+                      </div>
+
+                      <h3>Partnerships</h3>
+                    </div>
+                    <div className="item">
+                      <div className="img">
+                        <img
+                          src="./assets/vectors/caves-and-stones/cave-1.svg"
+                          alt="cave"
+                        />
+                      </div>
+
+                      <h3>Tentacular Couple and Cave Land Mint</h3>
+                    </div>
+                    <div className="item">
+                      <div className="img">
+                        <img
+                          src="./assets/vectors/caves-and-stones/cave-1.svg"
+                          alt="cave"
+                        />
+                      </div>
+
+                      <h3>OpenSea and Rarity Tools Verification</h3>
+                    </div>
+                    <div className="item">
+                      <div className="img">
+                        <img
+                          src="./assets/vectors/caves-and-stones/cave-1.svg"
+                          alt="cave"
+                        />
+                      </div>
+
+                      <h3>
+                        Fund Community Wallet and Marketing Wallet with 10 ETH
+                        each
+                      </h3>
+                    </div>
+                    <div className="item">
+                      <div className="img">
+                        <img
+                          src="./assets/vectors/caves-and-stones/cave-1.svg"
+                          alt="cave"
+                        />
+                      </div>
+
+                      <h3>Tentacular Dashboard</h3>
+                    </div>
+                    <div className="item">
+                      <div className="img">
+                        <img
+                          src="./assets/vectors/caves-and-stones/cave-1.svg"
+                          alt="cave"
+                        />
+                      </div>
+
+                      <h3>
+                        Launch of Berry-$BY and Tentacular Staking Rewards
+                      </h3>
+                    </div>
+                    <div className="item">
+                      <div className="img">
+                        <img
+                          src="./assets/vectors/caves-and-stones/cave-1.svg"
+                          alt="cave"
+                        />
+                      </div>
+
+                      <h3>Berry Shop for Collaborations and Merchandise</h3>
+                    </div>
+                    <div className="item">
+                      <div className="img">
+                        <img
+                          src="./assets/vectors/caves-and-stones/cave-1.svg"
+                          alt="cave"
+                        />
+                      </div>
+
+                      <h3>Integration of Community Alpha Partner</h3>
+                    </div>
+                    <div className="item">
+                      <div className="img">
+                        <img
+                          src="./assets/vectors/caves-and-stones/cave-1.svg"
+                          alt="cave"
+                        />
+                      </div>
+
+                      <h3>On-chain Compounding Berry Juicer </h3>
+                    </div>
+                    <div className="item">
+                      <div className="img">
+                        <img
+                          src="./assets/vectors/caves-and-stones/cave-1.svg"
+                          alt="cave"
+                        />
+                      </div>
+
+                      <h3>Upgrade your Tentacular with $BY</h3>
+                    </div>
+                    <div className="item">
+                      <div className="img">
+                        <img
+                          src="./assets/vectors/caves-and-stones/cave-1.svg"
+                          alt="cave"
+                        />
+                      </div>
+
+                      <h3>Endangermint V0</h3>
+                    </div>
+                  </div>
+
+                  <div
+                    className={clsx(
+                      "roadmap-main",
+                      {
+                        one: roadmapRevealedState === 0,
+                      },
+                      {
+                        two: roadmapRevealedState === 1,
+                      },
+                      {
+                        three: roadmapRevealedState === 2,
+                      }
+                    )}
+                    onClick={showMoreRoadmap}
+                  >
+                    {/* <Fade bottom cascade> */}
+                    <div className="caves">
+                      <img
+                        className="cave"
+                        src="./assets/vectors/caves-and-stones/cave-1.svg"
+                        alt="cave"
+                      />
+
+                      <img
+                        className="cave"
+                        src="./assets/vectors/caves-and-stones/cave-2.svg"
+                        alt="cave"
+                      />
+
+                      <img
+                        className="cave"
+                        src="./assets/vectors/caves-and-stones/cave-3.svg"
+                        alt="cave"
+                      />
+
+                      <img
+                        className="cave"
+                        src="./assets/vectors/caves-and-stones/cave-4.svg"
+                        alt="cave"
+                      />
+
+                      <img
+                        className="cave"
+                        src="./assets/vectors/caves-and-stones/cave-5.svg"
+                        alt="cave"
+                      />
+
+                      <img
+                        className="cave"
+                        src="./assets/vectors/caves-and-stones/cave-6.svg"
+                        alt="cave"
+                      />
+
+                      <img
+                        className="cave"
+                        src="./assets/vectors/caves-and-stones/cave-7.svg"
+                        alt="cave"
+                      />
+
+                      <img
+                        className="cave"
+                        src="./assets/vectors/caves-and-stones/cave-8.svg"
+                        alt="cave"
+                      />
+
+                      <img
+                        className="cave"
+                        src="./assets/vectors/caves-and-stones/cave-9.svg"
+                        alt="cave"
+                      />
+
+                      <img
+                        className="cave"
+                        src="./assets/vectors/caves-and-stones/cave-10.svg"
+                        alt="cave"
+                      />
+
+                      <img
+                        className="cave"
+                        src="./assets/vectors/caves-and-stones/cave-11.svg"
+                        alt="cave"
+                      />
+
+                      <img
+                        className="cave"
+                        src="./assets/vectors/caves-and-stones/cave-12.svg"
+                        alt="cave"
+                      />
+                    </div>
+                    {/* </Fade> */}
+                    {/* <Fade cascade> */}
+                    <div className="stones">
+                      <img
+                        className="stones"
+                        src="./assets/vectors/caves-and-stones/stones-1.svg"
+                        alt="stone"
+                      />
+                      <img
+                        className="stones"
+                        src="./assets/vectors/caves-and-stones/stones-2.svg"
+                        alt="stone"
+                      />
+                      <img
+                        className="stones"
+                        src="./assets/vectors/caves-and-stones/stones-3.svg"
+                        alt="stone"
+                      />
+                      <img
+                        className="stones"
+                        src="./assets/vectors/caves-and-stones/stones-4.svg"
+                        alt="stone"
+                      />
+                      <img
+                        className="stones"
+                        src="./assets/vectors/caves-and-stones/stones-5.svg"
+                        alt="stone"
+                      />
+                      <img
+                        className="stones"
+                        src="./assets/vectors/caves-and-stones/stones-6.svg"
+                        alt="stone"
+                      />
+                      <img
+                        className="stones"
+                        src="./assets/vectors/caves-and-stones/stones-7.svg"
+                        alt="stone"
+                      />
+                      <img
+                        className="stones"
+                        src="./assets/vectors/caves-and-stones/stones-8.svg"
+                        alt="stone"
+                      />
+                      <img
+                        className="stones"
+                        src="./assets/vectors/caves-and-stones/stones-9.svg"
+                        alt="stone"
+                      />
+                      <img
+                        className="stones"
+                        src="./assets/vectors/caves-and-stones/stones-10.svg"
+                        alt="stone"
+                      />
+                      <img
+                        className="stones"
+                        src="./assets/vectors/caves-and-stones/stones-11.svg"
+                        alt="stone"
+                      />
+                      <img
+                        className="stones"
+                        src="./assets/vectors/caves-and-stones/stones-12.svg"
+                        alt="stone"
+                      />
+                    </div>
+                    {/* </Fade> */}
+                    {/* <Bounce cascade> */}
+                    <div className="texts">
+                      <h3>Website Launch</h3>
+                      <h3>Partnerships</h3>
+                      <h3>
+                        Tentacular Couple <br />
+                        and Cave Land Mint
+                      </h3>
+                      <h3>
+                        OpenSea and Rarity <br /> Tools Verification
+                      </h3>
+                      <h3>
+                        Fund Community Wallet and Marketing <br />
+                        Wallet with 10 ETH each
+                      </h3>
+                      <h3>Tentacular Dashboard</h3>
+                      <h3 className="text-end">
+                        Launch of Berry-$BY and <br /> Tentacular Staking <br />{" "}
+                        Rewards
+                      </h3>
+                      <h3>
+                        Berry Shop for Collaborations <br />
+                        and Merchandise
+                      </h3>
+                      <h3 className="text-end">
+                        Integration of <br />
+                        Community <br />
+                        Alpha Partner
+                      </h3>
+                      <h3>
+                        On-chain Compounding <br />
+                        Berry Juicer
+                      </h3>
+                      <h3 className="text-end">
+                        Upgrade your <br />
+                        Tentacular with $BY
+                      </h3>
+                      <h3>Endangermint V0</h3>
+                    </div>
+                    {/* </Bounce> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="faq" className="section">
+          <div className="page-container">
+            <div className="text-center">
+              <h1>FAQ</h1>
+
+              <p className="text-white stroked-sm fs-20">
+                We will be updating this sections regularly, so consider visitng
+                our website time to time
+              </p>
+            </div>
+
+            <div className="faq-main">
+              {[
+                {
+                  question: "When is the mint date?",
+                  answer: "April 2022",
+                },
+                {
+                  question: "What blockchain will Tentacular reside on?",
+                  answer: "sdfsdf",
+                },
+                {
+                  question: "How many Tentacular NFTs will there be?",
+                  answer: "sdfsdf",
+                },
+                {
+                  question: "Is there a whitelist?",
+                  answer: "sdfsdf",
+                },
+                {
+                  question: "Are there any opportunities to join the team?",
+                  answer: "sdfsdf",
+                },
+                {
+                  question:
+                    "Will the Smart Contract be Audited? by a trusted and reputable third-party before launch to ensure fairness and security?",
+                  answer: "sdfsdf",
+                },
+                {
+                  question: "Will low gas minting be implemented?",
+                  answer: "sdfsdf",
+                },
+              ].map((el, idx) => {
+                return <FaqItem {...el} key={"faq-" + idx} />;
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="bg-green">
         <div id="team" className="section">
-          <img
-            className="vector bottom"
-            src="./assets/imgs/spikes-2.png"
-            alt="spikes"
-          />
           <div className="page-container">
             <Zoom>
               <h1>Core Team</h1>
@@ -482,7 +939,8 @@ function App() {
         </div>
 
         <div id="foot">
-          <h2 className="logo stroked">Tentacular</h2>
+          {/* <h2 className="logo stroked">Tentacular</h2> */}
+          <img className="logo" src="./assets/imgs/logo-white.png" alt="logo" />
           <img
             className="vector"
             src="./assets/imgs/bg-foot.png"
