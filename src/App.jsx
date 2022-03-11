@@ -8,7 +8,7 @@ import FaqItem from "./components/FaqItem";
 
 function App() {
   const [isSideNavActive, setIsSideNavActive] = useState(false);
-  const [roadmapRevealedState, setRoadmapRevealedState] = useState(0);
+  const [roadmapRevealedState, setRoadmapRevealedState] = useState(1);
 
   useEffect(() => {
     document.addEventListener("scroll", function () {
