@@ -410,7 +410,8 @@ function App() {
         <div id="roadmap-top">
           <img className="w-100" src="./assets/imgs/spikes.png" alt="spikes" />
           <img
-            src="./assets/vectors/roadmap-map-top.svg"
+            src="./assets/imgs/roadmap-top.png"
+            // src="./assets/vectors/roadmap-map-top.svg"
             className="w-100"
             alt="roadmap"
           />

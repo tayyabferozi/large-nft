@@ -480,18 +480,35 @@ a {
     &:nth-child(1) {
       right: 0;
       top: -10px;
+
+      @media screen and (max-width: 767px) {
+        width: 250px;
+      }
     }
     &:nth-child(2) {
       left: 0;
       top: 480px;
+
+      @media screen and (max-width: 767px) {
+        width: 190px;
+      }
     }
     &:nth-child(3) {
       right: 0;
       top: 1840px;
+
+      @media screen and (max-width: 767px) {
+        width: 190px;
+      }
     }
     &:nth-child(4) {
       left: 280px;
       top: 1960px;
+
+      @media screen and (max-width: 767px) {
+        top: 2300px;
+        width: 190px;
+      }
     }
     &:nth-child(5) {
       right: -70px;
@@ -500,6 +517,9 @@ a {
     &:nth-child(6) {
       left: 0px;
       top: 2870px;
+      @media screen and (max-width: 767px) {
+        width: 240px;
+      }
     }
   }
 
@@ -845,7 +865,6 @@ a {
 }
 .roadmap-section-container {
   overflow: hidden;
-  background: rgb(68, 70, 71);
   background: linear-gradient(
     0deg,
     rgba(68, 70, 71, 1) 85%,
@@ -854,27 +873,26 @@ a {
 
   @media screen and (max-width: 710px) {
     overflow-x: hidden;
-  }
-
-  @media screen and (max-width: 710px) {
-    background: linear-gradient(0deg, #444647 98%, rgba(255, 0, 0, 0) 100%);
+    background: linear-gradient(0deg, #444647 95%, rgba(255, 0, 0, 0) 100%);
   }
 }
 
 #roadmap-sm {
   @extend %transition;
   padding-bottom: 40%;
+  height: 3440px;
 
   @media screen and (min-width: 711px) {
     display: none;
   }
 
   &.one {
-    height: calc(3268px / 3);
+    // height: calc(3268px / 3);
   }
 
   &.two {
-    height: calc(3268px / 2);
+    // height: calc(3268px / 2);
+    height: 590px;
   }
 
   .item {
