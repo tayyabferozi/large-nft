@@ -30,6 +30,10 @@
   color: #fff;
 }
 
+.c-pointer {
+  cursor: pointer;
+}
+
 .stroked-sm {
   @extend %stroked-sm;
 }

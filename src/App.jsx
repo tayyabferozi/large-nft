@@ -196,7 +196,15 @@ function App() {
                         homes on Planet Berrylius and are now migrating to the
                         Ethereum blockchain.
                         <img
-                          className="btn d-block my-3"
+                          onClick={() => {
+                            window
+                              .open(
+                                "https://medium.com/@tentacularnft/planet-berrylius-f62fcc4107ce",
+                                "_blank"
+                              )
+                              .focus();
+                          }}
+                          className="c-pointer btn d-block my-3"
                           src="./assets/vectors/about-us-btn.svg"
                           alt="btn"
                         />
