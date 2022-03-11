@@ -56,6 +56,17 @@ function App() {
         <Link onClick={toggleSideNav} offset={80} smooth={true} to="team">
           Team
         </Link>
+        <div className="d-flex mt-4 social">
+          <a href="https://twitter.com/tentacularnft" className="btn">
+            <img src="./assets/vectors/nav-twitter.svg" alt="twiiter" />
+          </a>
+          <a href="https://discord.gg/tentacular" className="btn">
+            <img src="./assets/vectors/nav-discord.svg" alt="discord" />
+          </a>
+          <a href="https://medium.com/@tentacularnft/" className="btn">
+            <img src="./assets/vectors/nav-social-3.svg" alt="nav-social-3" />
+          </a>
+        </div>
       </div>
       <div id="header" className="section">
         <div className="page-container">
