@@ -1,6 +1,18 @@
 // @import url(https://db.onlinewebfonts.com/c/9186e96567fadf9c630b48d987ccd538?family=ChaloopsW00-Bd);
 @font-face {
   font-family: "Chaloops W00 Bd";
+  src: url("../assets/9186e96567fadf9c630b48d987ccd538.eot"); /* IE9*/
+  src: url("../assets/9186e96567fadf9c630b48d987ccd538.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../assets/9186e96567fadf9c630b48d987ccd538.woff2")
+      format("woff2"),
+    /* chrome、firefox */ url("../assets/9186e96567fadf9c630b48d987ccd538.woff")
+      format("woff"),
+    /* chrome、firefox */ url("../assets/9186e96567fadf9c630b48d987ccd538.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("../assets/9186e96567fadf9c630b48d987ccd538.svg#Chaloops W00 Bd")
+      format("svg"); /* iOS 4.1- */
   src: url("../assets/Chaloops\ W00\ Bd.otf");
 }
 

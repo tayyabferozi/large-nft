@@ -179,11 +179,18 @@ a {
     }
 
     @media screen and (max-width: 767px) {
-      height: 50%;
+      height: 45%;
+      top: calc(50% - 7%);
     }
 
-    @media screen and (max-width: 340px) {
+    @media screen and (max-width: 450px) {
+      height: 50%;
+      top: calc(50% - 6.5%);
+    }
+
+    @media screen and (max-width: 335px) {
       height: 60%;
+      top: calc(50% - 5.5%);
     }
   }
 
