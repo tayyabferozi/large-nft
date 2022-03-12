@@ -27,6 +27,27 @@ const Roadmap = () => {
         />
 
         <div id="roadmap-wrap">
+          {roadmapRevealedState !== 2 && (
+            <button
+              onMouseEnter={(e) =>
+                e.target.classList.add(
+                  "animate__animated",
+                  "animate__rubberBand"
+                )
+              }
+              onMouseLeave={(e) =>
+                e.target.classList.remove(
+                  "animate__animated",
+                  "animate__rubberBand"
+                )
+              }
+              className=""
+              onClick={showMoreRoadmap}
+              id="show-more-roadmap"
+            >
+              Expand Full Roadmap
+            </button>
+          )}
           <img className="w-100 gif" src="./assets/imgs/jins.gif" alt="jins" />
           <div className="jins">
             <img
@@ -70,7 +91,6 @@ const Roadmap = () => {
                 <h1 className="text-center">Roadmap</h1>
 
                 <div
-                  onClick={showMoreRoadmap}
                   className={clsx(
                     "section mt-5",
                     {
@@ -222,7 +242,6 @@ const Roadmap = () => {
                       three: roadmapRevealedState === 2,
                     }
                   )}
-                  onClick={showMoreRoadmap}
                 >
                   {/* <Fade bottom cascade> */}
                   <div className="caves">
