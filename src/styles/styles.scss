@@ -44,8 +44,12 @@ a {
   }
 }
 
+body {
+  position: relative;
+}
+
 #header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -58,10 +62,10 @@ a {
     padding: 1rem 0;
   }
 
-  &.scrolled {
-    background-color: #fff;
-    padding: 1rem 0;
-  }
+  // &.scrolled {
+  //   background-color: #fff;
+  //   padding: 1rem 0;
+  // }
 
   .navbar {
     display: flex;
@@ -553,6 +557,9 @@ a {
     position: relative;
     margin-top: 3rem;
     height: 3670px;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
 
     @extend %transition;
 
@@ -589,7 +596,6 @@ a {
     @media screen and (max-width: 1410px) {
       transform: scale(0.8);
       height: 3280px;
-      // margin-top: -20%;
       top: -6rem;
 
       &.one {
@@ -610,7 +616,6 @@ a {
       transform: scale(0.7);
       height: 3100px;
       margin-top: -20rem;
-      margin-left: -5rem;
       top: 12rem;
 
       &.one {
@@ -623,7 +628,7 @@ a {
       }
 
       &.three {
-        top: -12rem !important;
+        top: -10rem !important;
       }
     }
 
@@ -1047,6 +1052,11 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 400px;
+
+    @media screen and (max-width: 991px) {
+      width: 300px;
+    }
 
     @media screen and (max-width: 767px) {
       top: calc(50% - 3rem);
@@ -1054,6 +1064,7 @@ a {
 
     @media screen and (max-width: 575px) {
       top: calc(50% - 5rem);
+      width: 250px;
     }
   }
 
