@@ -207,7 +207,10 @@ const Roadmap = () => {
 
                     <h3>
                       On-chain Compounding Berry Juicer
-                      <a className="d-block" href="#0">
+                      <a
+                        className="d-block"
+                        href="https://medium.com/@tentacularnft/tentacular-berry-juicer-b2a5ccbf5c0b"
+                      >
                         View Mechanics
                       </a>
                     </h3>
@@ -420,7 +423,9 @@ const Roadmap = () => {
                       On-chain Compounding <br />
                       Berry Juicer
                       <h3>
-                        <a href="#0">View Mechanics</a>
+                        <a href="https://medium.com/@tentacularnft/tentacular-berry-juicer-b2a5ccbf5c0b">
+                          View Mechanics
+                        </a>
                       </h3>
                     </h3>
                     <h3 className="text-end">
