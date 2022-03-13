@@ -62,11 +62,6 @@ body {
     padding: 1rem 0;
   }
 
-  // &.scrolled {
-  //   background-color: #fff;
-  //   padding: 1rem 0;
-  // }
-
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -96,12 +91,6 @@ body {
         height: 4px;
         background-color: #000;
         border-radius: 6px;
-      }
-
-      &:hover {
-        span {
-          // background-color: $color1;
-        }
       }
     }
 
@@ -462,7 +451,6 @@ body {
 #roadmap-top {
   position: relative;
   background-color: #000;
-  // background-color: $color4;
 
   img {
     display: block;
@@ -491,7 +479,6 @@ body {
     z-index: 2;
 
     @media screen and (max-width: 710px) {
-      // transform: translateY(40%);
     }
   }
 
@@ -584,17 +571,7 @@ body {
       display: none !important;
     }
 
-    &.one,
     &.two {
-      // cursor: pointer;
-    }
-
-    // &.one {
-    //   height: calc(3670px / 3);
-    // }
-
-    &.two {
-      // height: calc(3670px / 2);
       height: 1145px;
     }
 
@@ -602,12 +579,7 @@ body {
       max-width: 3740px;
       top: 4rem;
 
-      &.one {
-        // height: calc(3600px / 3);
-      }
-
       &.two {
-        // height: calc(3600px / 2);
         height: 1120px;
       }
     }
@@ -617,13 +589,7 @@ body {
       height: 2950px;
       top: -6rem;
 
-      &.one {
-        // height: calc(3600px / 3);
-      }
-
       &.two {
-        // height: calc(3600px / 2);
-        // top: -10rem;
         height: 860px;
         top: -3rem;
       }
@@ -639,13 +605,7 @@ body {
       margin-top: -20rem;
       top: 12rem;
 
-      &.one {
-        // height: calc(3600px / 3);
-      }
-
       &.two {
-        // height: calc(3600px / 2);
-        // top: 8rem;
         height: 1100px;
         top: 14rem;
       }
@@ -660,13 +620,7 @@ body {
       height: 2590px;
       margin-left: -5rem;
 
-      &.one {
-        // height: calc(2800px / 3);
-      }
-
       &.two {
-        // height: calc(2800px / 2);
-        // top: 4rem;
         height: 1000px;
         top: 11rem;
       }
@@ -683,14 +637,7 @@ body {
       top: 10rem;
       height: 2380px;
 
-      &.one {
-        // top: 20rem;
-        // height: calc(2300px / 2);
-      }
-
       &.two {
-        // top: 10rem !important;
-        // height: calc(2300px / 1.25);
         top: 21rem !important;
         height: 1220px;
       }
@@ -767,10 +714,6 @@ body {
         top: 3147px;
         left: 1000px;
       }
-
-      // @media screen and (max-width: 767px) {
-
-      // }
     }
 
     img.stones {
@@ -898,11 +841,6 @@ body {
 .roadmap-section-container {
   overflow: hidden;
   background: #00000004;
-  // background: linear-gradient(
-  //   0deg,
-  //   rgba(68, 70, 71, 1) 85%,
-  //   rgba(255, 0, 0, 0) 100%
-  // );
   background: linear-gradient(0deg, #444647 85%, #58575700);
 
   @media screen and (max-width: 710px) {
@@ -924,12 +862,7 @@ body {
     height: 3430px;
   }
 
-  &.one {
-    // height: calc(3268px / 3);
-  }
-
   &.two {
-    // height: calc(3268px / 2);
     height: 590px;
   }
 

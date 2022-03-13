@@ -21,7 +21,6 @@ const Roadmap = () => {
         <img className="w-100" src="./assets/imgs/spikes.png" alt="spikes" />
         <img
           src="./assets/imgs/roadmap-top.png"
-          // src="./assets/vectors/roadmap-map-top.svg"
           className="w-100"
           alt="roadmap"
         />
@@ -251,7 +250,6 @@ const Roadmap = () => {
                     }
                   )}
                 >
-                  {/* <Fade bottom cascade> */}
                   <div className="caves">
                     <img
                       className="cave"
@@ -389,8 +387,6 @@ const Roadmap = () => {
                       alt="stone"
                     />
                   </div>
-                  {/* </Fade> */}
-                  {/* <Bounce cascade> */}
                   <div className="texts">
                     <h3>Website Launch</h3>
                     <h3>Partnerships</h3>
@@ -434,7 +430,6 @@ const Roadmap = () => {
                     </h3>
                     <h3>Endangermint V0</h3>
                   </div>
-                  {/* </Bounce> */}
                 </div>
               </div>
             </div>

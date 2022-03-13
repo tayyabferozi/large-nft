@@ -90,7 +90,6 @@ const Team = () => {
       </div>
 
       <div id="foot">
-        {/* <h2 className="logo stroked">Tentacular</h2> */}
         <img className="logo" src="./assets/imgs/logo-white.png" alt="logo" />
         <img className="vector" src="./assets/imgs/bg-foot.png" alt="bg-foot" />
       </div>
