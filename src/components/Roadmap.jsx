@@ -205,7 +205,12 @@ const Roadmap = () => {
                       />
                     </div>
 
-                    <h3>On-chain Compounding Berry Juicer </h3>
+                    <h3>
+                      On-chain Compounding Berry Juicer
+                      <a className="d-block" href="#0">
+                        View Mechanics
+                      </a>
+                    </h3>
                   </div>
                   <div className="item">
                     <div className="img">
@@ -414,6 +419,9 @@ const Roadmap = () => {
                     <h3>
                       On-chain Compounding <br />
                       Berry Juicer
+                      <h3>
+                        <a href="#0">View Mechanics</a>
+                      </h3>
                     </h3>
                     <h3 className="text-end">
                       Upgrade your <br />
@@ -435,8 +443,8 @@ const Roadmap = () => {
             <h1>FAQ</h1>
 
             <p className="text-white stroked-sm fs-20">
-              We will be updating this sections regularly, so consider visitng
-              our website time to time
+              We will be updating this sections regularly
+              {/*, so consider visitng our website time to time */}
             </p>
           </div>
 
@@ -470,8 +478,7 @@ const Roadmap = () => {
                   "Yes, please join our discord server to apply for a position on the team.",
               },
               {
-                question:
-                  "Will the Smart Contract be Audited? by a trusted and reputable third-party before launch to ensure fairness and security?",
+                question: "Will the Smart Contract be Audited?",
                 answer: "Yes.",
               },
               {
