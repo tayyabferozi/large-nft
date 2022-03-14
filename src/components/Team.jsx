@@ -35,7 +35,7 @@ const Team = () => {
                       />
                       <h3>LordTentacles</h3>
                       <p className="text-white stroked-sm fs-20">
-                        Founder and Project Lead
+                        Founder and Creative Director
                       </p>
                     </div>
                   </div>
@@ -46,9 +46,7 @@ const Team = () => {
                         alt="team-mem"
                       />
                       <h3>HJ</h3>
-                      <p className="text-white stroked-sm fs-20">
-                        Founder and Project Lead
-                      </p>
+                      <p className="text-white stroked-sm fs-20">Lead Artist</p>
                     </div>
                   </div>
                   <div className="col-lg-3 col-md-6">
@@ -59,7 +57,7 @@ const Team = () => {
                       />
                       <h3>0xbb</h3>
                       <p className="text-white stroked-sm fs-20">
-                        Founder and Project Lead
+                        Lead Developer
                       </p>
                     </div>
                   </div>

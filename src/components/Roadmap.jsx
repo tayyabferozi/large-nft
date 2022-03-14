@@ -449,7 +449,7 @@ const Roadmap = () => {
             <h1>FAQ</h1>
 
             <p className="text-white stroked-sm fs-20">
-              We will be updating this sections regularly
+              We will be updating this section regularly
               {/*, so consider visitng our website time to time */}
             </p>
           </div>
