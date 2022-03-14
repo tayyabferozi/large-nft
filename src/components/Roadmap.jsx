@@ -48,40 +48,46 @@ const Roadmap = () => {
             </button>
           )}
           <img className="w-100 gif" src="./assets/imgs/jins.gif" alt="jins" />
-          <div className="jins">
-            <img
-              className="jin"
-              src="./assets/vectors/caves-and-stones/jin-1.svg"
-              alt="jin"
-            />
-            <img
-              className="jin"
-              src="./assets/vectors/caves-and-stones/jin-2.svg"
-              alt="jin"
-            />
-            <img
-              className="jin"
-              src="./assets/vectors/caves-and-stones/jin-3.svg"
-              alt="jin"
-            />
-            <img
-              className="jin"
-              src="./assets/vectors/caves-and-stones/jin-4.svg"
-              alt="jin"
-            />
-            <img
-              className="jin"
-              src="./assets/vectors/caves-and-stones/jin-5.svg"
-              alt="jin"
-            />
-            <img
-              className="jin"
-              src="./assets/vectors/caves-and-stones/jin-6.svg"
-              alt="jin"
-            />
-          </div>
-          <div className="roadmap-section-container">
+
+          <div
+            className={clsx("roadmap-section-container", {
+              two: roadmapRevealedState === 2,
+            })}
+          >
             <div className="section" id="roadmap">
+              {" "}
+              <div className="jins">
+                <img
+                  className="jin"
+                  src="./assets/vectors/caves-and-stones/jin-1.svg"
+                  alt="jin"
+                />
+                <img
+                  className="jin"
+                  src="./assets/vectors/caves-and-stones/jin-2.svg"
+                  alt="jin"
+                />
+                <img
+                  className="jin"
+                  src="./assets/vectors/caves-and-stones/jin-3.svg"
+                  alt="jin"
+                />
+                <img
+                  className="jin"
+                  src="./assets/vectors/caves-and-stones/jin-4.svg"
+                  alt="jin"
+                />
+                <img
+                  className="jin"
+                  src="./assets/vectors/caves-and-stones/jin-5.svg"
+                  alt="jin"
+                />
+                <img
+                  className="jin"
+                  src="./assets/vectors/caves-and-stones/jin-6.svg"
+                  alt="jin"
+                />
+              </div>
               <div
                 className={clsx("page-container", {
                   three: roadmapRevealedState === 2,

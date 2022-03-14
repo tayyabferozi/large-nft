@@ -14,7 +14,7 @@ const Team = () => {
           <div className="team-cards">
             <div className="container-fluid px-0">
               <Slide bottom cascade>
-                <div className="row g-4">
+                <div className="row g-4 mt-3">
                   <div className="col-lg-3 col-md-6">
                     <div className="team-card">
                       <img
@@ -66,24 +66,34 @@ const Team = () => {
                 </div>
               </Slide>
 
-              <h2 className="sub-title stroked text-white mt-5">
-                Moderation and Marketing
-              </h2>
+              <Zoom>
+                <h2 className="sub-title stroked text-white mt-5">
+                  Moderation and Marketing
+                </h2>
+              </Zoom>
 
-              <div className="row justify-content-center mt-5">
-                <div className="col-lg-3 col-md-6">
-                  <div className="team-card">
-                    <img src="./assets/vectors/team-mem-2.svg" alt="team-mem" />
-                    <h3>TheNFTChief</h3>
+              <Slide bottom cascade>
+                <div className="row justify-content-center mt-5 g-4">
+                  <div className="col-lg-3 col-md-6">
+                    <div className="team-card">
+                      <img
+                        src="./assets/vectors/team-mem-2.svg"
+                        alt="team-mem"
+                      />
+                      <h3>TheNFTChief</h3>
+                    </div>
+                  </div>
+                  <div className="col-lg-3 col-md-6">
+                    <div className="team-card">
+                      <img
+                        src="./assets/vectors/team-mem-3.svg"
+                        alt="team-mem"
+                      />
+                      <h3>Darth Lini</h3>
+                    </div>
                   </div>
                 </div>
-                <div className="col-lg-3 col-md-6">
-                  <div className="team-card">
-                    <img src="./assets/vectors/team-mem-3.svg" alt="team-mem" />
-                    <h3>Darth Lini</h3>
-                  </div>
-                </div>
-              </div>
+              </Slide>
             </div>
           </div>
         </div>

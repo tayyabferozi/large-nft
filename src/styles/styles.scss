@@ -845,7 +845,11 @@ body {
 
   @media screen and (max-width: 710px) {
     overflow-x: hidden;
-    background: linear-gradient(0deg, #444647 95%, #58575700);
+    background: linear-gradient(0deg, #444647 83%, #58575700);
+
+    &.two {
+      background: linear-gradient(0deg, #444647 97%, #58575700);
+    }
   }
 }
 
@@ -942,6 +946,10 @@ body {
   background-color: $color1;
   padding: 130px 0 130px;
 
+  @media screen and (max-width: 991px) {
+    padding-bottom: 50px;
+  }
+
   @media screen and (min-width: 575px) {
     padding-top: calc(130px + 10vw);
   }
@@ -995,7 +1003,6 @@ body {
       img {
         width: 100%;
         max-width: 275px;
-        margin-bottom: 0.5rem;
       }
       h3 {
         @extend %stroked;
