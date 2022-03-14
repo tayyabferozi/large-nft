@@ -17,10 +17,7 @@ const Team = () => {
                 <div className="row g-4 mt-3">
                   <div className="col-lg-3 col-md-6">
                     <div className="team-card">
-                      <img
-                        src="./assets/vectors/team-mem-1.svg"
-                        alt="team-mem"
-                      />
+                      <img src="./assets/imgs/team-mem-1.png" alt="team-mem" />
                       <h3>TentacleMaster</h3>
                       <p className="text-white stroked-sm fs-20">
                         Founder and Project Lead
@@ -29,10 +26,7 @@ const Team = () => {
                   </div>
                   <div className="col-lg-3 col-md-6">
                     <div className="team-card">
-                      <img
-                        src="./assets/vectors/team-mem-2.svg"
-                        alt="team-mem"
-                      />
+                      <img src="./assets/imgs/team-mem-2.png" alt="team-mem" />
                       <h3>LordTentacles</h3>
                       <p className="text-white stroked-sm fs-20">
                         Founder and Creative Director
@@ -41,20 +35,14 @@ const Team = () => {
                   </div>
                   <div className="col-lg-3 col-md-6">
                     <div className="team-card">
-                      <img
-                        src="./assets/vectors/team-mem-3.svg"
-                        alt="team-mem"
-                      />
+                      <img src="./assets/imgs/team-mem-3.png" alt="team-mem" />
                       <h3>HJ</h3>
                       <p className="text-white stroked-sm fs-20">Lead Artist</p>
                     </div>
                   </div>
                   <div className="col-lg-3 col-md-6">
                     <div className="team-card">
-                      <img
-                        src="./assets/vectors/team-mem-4.svg"
-                        alt="team-mem"
-                      />
+                      <img src="./assets/imgs/team-mem-4.png" alt="team-mem" />
                       <h3>0xbb</h3>
                       <p className="text-white stroked-sm fs-20">
                         Lead Developer
@@ -74,19 +62,13 @@ const Team = () => {
                 <div className="row justify-content-center mt-5 g-4">
                   <div className="col-lg-3 col-md-6">
                     <div className="team-card">
-                      <img
-                        src="./assets/vectors/team-mem-2.svg"
-                        alt="team-mem"
-                      />
+                      <img src="./assets/imgs/team-mem-2.png" alt="team-mem" />
                       <h3>TheNFTChief</h3>
                     </div>
                   </div>
                   <div className="col-lg-3 col-md-6">
                     <div className="team-card">
-                      <img
-                        src="./assets/vectors/team-mem-3.svg"
-                        alt="team-mem"
-                      />
+                      <img src="./assets/imgs/team-mem-3.png" alt="team-mem" />
                       <h3>Darth Lini</h3>
                     </div>
                   </div>
